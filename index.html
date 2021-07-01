@@ -158,16 +158,38 @@
     if (window.autoSpider && window.vInterfaceObject) {
       document.querySelector('.mobile-load-title-overlay').style.display = 'none';
     }
+
+    var date = new Date();
+    var dd = String(date.getDate()).padStart(2, '0');
+    var mm = String(date.getMonth() + 1).padStart(2, '0');
+    var yyyy = date.getFullYear();
+    date = mm + '/' + dd + '/' + yyyy;
+    var player = GetPlayer();
+    var name = player.GetVar("uName"); /* Replace uName with the Storyline variable holding the user's name */
+    var doc = new jsPDF({
+      orientation: 'landscape' /* Remove this line of code if your certificate is in portrait orientation */
+    })
+    var img = new Image;
+    img.onload = function () {
+      doc.addImage(this, 0, 0, 297, 210);
+      doc.setFontSize(40); /* Set the font size by changing the number between the parentheses */
+      doc.setTextColor(99, 43, 43); /* Change the RGB text color by changing the numbers between the parentheses */
+      doc.setFont('Oswald-Bold', 'bold');
+      doc.text(name, (doc.internal.pageSize.width / 2), 120, null, null, 'center'); /* This tells the PDF to add text to the page. The first argument is the text to add (in this case a JavaScript variable), the second is the x-coordinate (in this case we’re using a function to find a middle point for the document), the third is the y-coordinate (in millimeters), the fourth and fifth arguments are null, and the sixth argument says that the text should be centered */
+      doc.setFont('Oswald-Regular', 'normal');
+      doc.setFontSize(15);
+      doc.text(date, (doc.internal.pageSize.width / 2), 172, null, null, 'center'); /* See above for the full explanation of the doc.text() function */
+      doc.save("Certificate.pdf"); /* Swap out ‘Certificate’ with what you want your certificate to be named */
+    };
+    img.crossOrigin = "";
+    img.src = "certificate.png"; /* Change the file name between these quotes to the file that you exported as the base certificate */
   </script>
 
   <link rel="stylesheet" href="html5/data/css/output.min.css" data-noprefix />
 
-  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.debug.js"
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.debug.js"
     integrity="sha384-NaWTHo/8YCBYJ59830LTz/P4aQZK1sS0SneOgAvhsIl3zBu8r9RevNg5lHCHAuQ/"
-    crossorigin="anonymous"></script> -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.3.1/jspdf.umd.min.js"
-    integrity="sha512-VKjwFVu/mmKGk0Z0BxgDzmn10e590qk3ou/jkmRugAkSTMSIRkd4nEnk+n7r5WBbJquusQEQjBidrBD3IQQISQ=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    crossorigin="anonymous"></script>
   <script src="Oswald-Bold-bold.js"></script>
   <script src="Oswald-Regular-normal.js"></script>
 
