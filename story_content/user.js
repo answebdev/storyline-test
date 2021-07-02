@@ -2,7 +2,7 @@ function ExecuteScript(strId)
 {
   switch (strId)
   {
-      case "5sBdlhPe9UH":
+      case "5pK6ONYRZa8":
         Script1();
         break;
   }
@@ -23,16 +23,11 @@ function Script1()
     var img = new Image;
     img.onload = function () {
       doc.addImage(this, 0, 0, 297, 210);
-
-      doc.addFont("Oswald-Regular.ttf", "Oswald", "normal");
-      doc.addFont("Oswald-Bold.ttf", "Oswald", "bold");
-      doc.setFont("Oswald");
-      doc.setFontType("normal");
-      doc.setFontType("bold");
-
       doc.setFontSize(40); /* Set the font size by changing the number between the parentheses */
       doc.setTextColor(99, 43, 43); /* Change the RGB text color by changing the numbers between the parentheses */
+      doc.setFont(undefined, 'bold');
       doc.text(name, (doc.internal.pageSize.width / 2), 120, null, null, 'center'); /* This tells the PDF to add text to the page. The first argument is the text to add (in this case a JavaScript variable), the second is the x-coordinate (in this case we’re using a function to find a middle point for the document), the third is the y-coordinate (in millimeters), the fourth and fifth arguments are null, and the sixth argument says that the text should be centered */
+      doc.setFont(undefined, 'normal');
       doc.setFontSize(15);
       doc.text(date, (doc.internal.pageSize.width / 2), 172, null, null, 'center'); /* See above for the full explanation of the doc.text() function */
       doc.save("Certificate.pdf"); /* Swap out ‘Certificate’ with what you want your certificate to be named */
