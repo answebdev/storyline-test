@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <bwFrame xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" default_layout="pxabnsnfns00000000001" textdirection="ltr" textengine="DirectWrite" device="false" fontscale="100" captionFontScale="100" kbshortcuts="false" skip_nav_enabled="true" chromeless="false" outputtype="undefined" theme="unified" themeAccentColor="0x4FBDF4">
   <layouts>
-    <layout name="npnxnanbsnfns00000000001" font="Lato" controllayout="npnxnanbsnfns00000000001" colorscheme="pxabnsnfns00000000001" string_table="pxabnsnfns00000000001" />
+    <layout name="npnxnanbsnfns00000100001" font="Lato" controllayout="npnxnanbsnfns00000100001" colorscheme="pxabnsnfns00000000001" string_table="pxabnsnfns00000000001" />
+    <layout name="pxabnsnfns00000100001" font="Lato" controllayout="pxabnsnfns00000100001" colorscheme="pxabnsnfns00000000001" string_table="pxabnsnfns00000000001" />
+    <layout name="npxnabnsnfns00000100001" font="Lato" controllayout="npxnabnsnfns00000100001" colorscheme="pxabnsnfns00000000001" string_table="pxabnsnfns00000000001" />
+    <layout name="npnxnanbnsnfns00000100001" font="Lato" controllayout="npnxnanbnsnfns00000100001" colorscheme="pxabnsnfns00000000001" string_table="pxabnsnfns00000000001" />
+    <layout name="pxabnsnfns00000100000" font="Lato" controllayout="pxabnsnfns00000100000" colorscheme="pxabnsnfns00000000001" string_table="pxabnsnfns00000000001" />
     <layout name="pxabnsnfns00000000001" font="Lato" controllayout="pxabnsnfns00000000001" colorscheme="pxabnsnfns00000000001" string_table="pxabnsnfns00000000001" />
-    <layout name="npxnabnsnfns00000000001" font="Lato" controllayout="npxnabnsnfns00000000001" colorscheme="pxabnsnfns00000000001" string_table="pxabnsnfns00000000001" />
-    <layout name="npnxnanbnsnfns00000000001" font="Lato" controllayout="npnxnanbnsnfns00000000001" colorscheme="pxabnsnfns00000000001" string_table="pxabnsnfns00000000001" />
-    <layout name="pxabnsnfns00000000000" font="Lato" controllayout="pxabnsnfns00000000000" colorscheme="pxabnsnfns00000000001" string_table="pxabnsnfns00000000001" />
+    <layout name="npnxnanbsnfns00000000001" font="Lato" controllayout="npnxnanbsnfns00000000001" colorscheme="pxabnsnfns00000000001" string_table="pxabnsnfns00000000001" />
   </layouts>
   <control_options>
     <optiongroups>
@@ -22,12 +24,12 @@
           <option name="sidebar_enabled" value="false">
             <options>
               <option name="sidebarpos" value="left" />
-              <option name="closed" value="false" />
+              <option name="closed" value="true" />
             </options>
           </option>
           <optionlist name="tabs">
             <listitems>
-              <listitem name="resources" value="false" group="linkright" />
+              <listitem name="resources" value="true" group="linkleft" />
               <listitem name="outline" value="false" group="sidebar" />
               <listitem name="glossary" value="false" group="sidebar" />
               <listitem name="transcript" value="false" group="sidebar" />
@@ -90,7 +92,7 @@
     </optiongroups>
   </control_options>
   <control_layouts>
-    <control_layout name="npnxnanbsnfns00000000001">
+    <control_layout name="npnxnanbsnfns00000100001">
       <control name="volume" enabled="false" />
       <control name="seekbar" enabled="false" />
       <control name="replay" enabled="false" />
@@ -103,7 +105,7 @@
       <control name="submit" enabled="true" />
       <control name="finish" enabled="false" />
       <control name="submitall" enabled="false" />
-      <control name="resources" enabled="false" />
+      <control name="resources" enabled="true" />
       <control name="glossary" enabled="false" />
       <control name="transcript" enabled="false" />
       <control name="outline" enabled="false">
@@ -112,6 +114,98 @@
         </controls>
       </control>
       <control name="close_btn" enabled="true" />
+    </control_layout>
+    <control_layout name="pxabnsnfns00000100001">
+      <control name="volume" enabled="false" />
+      <control name="seekbar" enabled="false" />
+      <control name="replay" enabled="false" />
+      <control name="pauseplay" enabled="false" />
+      <control name="logo" enabled="false" />
+      <control name="previous" enabled="true" />
+      <control name="next" enabled="true" />
+      <control name="swipeleft" enabled="true" />
+      <control name="swiperight" enabled="true" />
+      <control name="submit" enabled="false" />
+      <control name="finish" enabled="false" />
+      <control name="submitall" enabled="false" />
+      <control name="resources" enabled="true" />
+      <control name="glossary" enabled="false" />
+      <control name="transcript" enabled="false" />
+      <control name="outline" enabled="false">
+        <controls>
+          <control name="search" enabled="false" />
+        </controls>
+      </control>
+      <control name="close_btn" enabled="true" />
+    </control_layout>
+    <control_layout name="npxnabnsnfns00000100001">
+      <control name="volume" enabled="false" />
+      <control name="seekbar" enabled="false" />
+      <control name="replay" enabled="false" />
+      <control name="pauseplay" enabled="false" />
+      <control name="logo" enabled="false" />
+      <control name="previous" enabled="false" />
+      <control name="next" enabled="true" />
+      <control name="swipeleft" enabled="false" />
+      <control name="swiperight" enabled="true" />
+      <control name="submit" enabled="false" />
+      <control name="finish" enabled="false" />
+      <control name="submitall" enabled="false" />
+      <control name="resources" enabled="true" />
+      <control name="glossary" enabled="false" />
+      <control name="transcript" enabled="false" />
+      <control name="outline" enabled="false">
+        <controls>
+          <control name="search" enabled="false" />
+        </controls>
+      </control>
+      <control name="close_btn" enabled="true" />
+    </control_layout>
+    <control_layout name="npnxnanbnsnfns00000100001">
+      <control name="volume" enabled="false" />
+      <control name="seekbar" enabled="false" />
+      <control name="replay" enabled="false" />
+      <control name="pauseplay" enabled="false" />
+      <control name="logo" enabled="false" />
+      <control name="previous" enabled="false" />
+      <control name="next" enabled="false" />
+      <control name="swipeleft" enabled="false" />
+      <control name="swiperight" enabled="false" />
+      <control name="submit" enabled="false" />
+      <control name="finish" enabled="false" />
+      <control name="submitall" enabled="false" />
+      <control name="resources" enabled="true" />
+      <control name="glossary" enabled="false" />
+      <control name="transcript" enabled="false" />
+      <control name="outline" enabled="false">
+        <controls>
+          <control name="search" enabled="false" />
+        </controls>
+      </control>
+      <control name="close_btn" enabled="true" />
+    </control_layout>
+    <control_layout name="pxabnsnfns00000100000">
+      <control name="volume" enabled="false" />
+      <control name="seekbar" enabled="false" />
+      <control name="replay" enabled="false" />
+      <control name="pauseplay" enabled="false" />
+      <control name="logo" enabled="false" />
+      <control name="previous" enabled="true" />
+      <control name="next" enabled="true" />
+      <control name="swipeleft" enabled="true" />
+      <control name="swiperight" enabled="true" />
+      <control name="submit" enabled="false" />
+      <control name="finish" enabled="false" />
+      <control name="submitall" enabled="false" />
+      <control name="resources" enabled="true" />
+      <control name="glossary" enabled="false" />
+      <control name="transcript" enabled="false" />
+      <control name="outline" enabled="false">
+        <controls>
+          <control name="search" enabled="false" />
+        </controls>
+      </control>
+      <control name="close_btn" enabled="false" />
     </control_layout>
     <control_layout name="pxabnsnfns00000000001">
       <control name="volume" enabled="false" />
@@ -136,30 +230,7 @@
       </control>
       <control name="close_btn" enabled="true" />
     </control_layout>
-    <control_layout name="npxnabnsnfns00000000001">
-      <control name="volume" enabled="false" />
-      <control name="seekbar" enabled="false" />
-      <control name="replay" enabled="false" />
-      <control name="pauseplay" enabled="false" />
-      <control name="logo" enabled="false" />
-      <control name="previous" enabled="false" />
-      <control name="next" enabled="true" />
-      <control name="swipeleft" enabled="false" />
-      <control name="swiperight" enabled="true" />
-      <control name="submit" enabled="false" />
-      <control name="finish" enabled="false" />
-      <control name="submitall" enabled="false" />
-      <control name="resources" enabled="false" />
-      <control name="glossary" enabled="false" />
-      <control name="transcript" enabled="false" />
-      <control name="outline" enabled="false">
-        <controls>
-          <control name="search" enabled="false" />
-        </controls>
-      </control>
-      <control name="close_btn" enabled="true" />
-    </control_layout>
-    <control_layout name="npnxnanbnsnfns00000000001">
+    <control_layout name="npnxnanbsnfns00000000001">
       <control name="volume" enabled="false" />
       <control name="seekbar" enabled="false" />
       <control name="replay" enabled="false" />
@@ -169,7 +240,7 @@
       <control name="next" enabled="false" />
       <control name="swipeleft" enabled="false" />
       <control name="swiperight" enabled="false" />
-      <control name="submit" enabled="false" />
+      <control name="submit" enabled="true" />
       <control name="finish" enabled="false" />
       <control name="submitall" enabled="false" />
       <control name="resources" enabled="false" />
@@ -181,29 +252,6 @@
         </controls>
       </control>
       <control name="close_btn" enabled="true" />
-    </control_layout>
-    <control_layout name="pxabnsnfns00000000000">
-      <control name="volume" enabled="false" />
-      <control name="seekbar" enabled="false" />
-      <control name="replay" enabled="false" />
-      <control name="pauseplay" enabled="false" />
-      <control name="logo" enabled="false" />
-      <control name="previous" enabled="true" />
-      <control name="next" enabled="true" />
-      <control name="swipeleft" enabled="true" />
-      <control name="swiperight" enabled="true" />
-      <control name="submit" enabled="false" />
-      <control name="finish" enabled="false" />
-      <control name="submitall" enabled="false" />
-      <control name="resources" enabled="false" />
-      <control name="glossary" enabled="false" />
-      <control name="transcript" enabled="false" />
-      <control name="outline" enabled="false">
-        <controls>
-          <control name="search" enabled="false" />
-        </controls>
-      </control>
-      <control name="close_btn" enabled="false" />
     </control_layout>
   </control_layouts>
   <colorschemes>
@@ -1484,13 +1532,15 @@
         <slidelink slideid="_player.6lSdB5WOwWW" displaytext="Participial Adjective Lesson" expand="true" type="slide">
           <links>
             <slidelink slideid="_player.6lSdB5WOwWW.60F4LMp3Jzg" displaytext="Welcome" expand="false" type="slide" />
-            <slidelink slideid="_player.6lSdB5WOwWW.5tYkIhK6DJT" displaytext="Intro" expand="false" type="slide" />
+            <slidelink slideid="_player.6lSdB5WOwWW.5tYkIhK6DJT" displaytext="Lesson Objectives" expand="false" type="slide" />
+            <slidelink slideid="_player.6lSdB5WOwWW.6Mum8ggRYrg" displaytext="Intro" expand="false" type="slide" />
             <slidelink slideid="_player.6lSdB5WOwWW.5rI50HJzRMk" displaytext="Definition" expand="false" type="slide" />
             <slidelink slideid="_player.6lSdB5WOwWW.5cwbqxMcnkh" displaytext="Forms and Uses" expand="false" type="slide" />
             <slidelink slideid="_player.6lSdB5WOwWW.6qBYLX7Nokn" displaytext="Forms and Uses" expand="false" type="slide" />
-            <slidelink slideid="_player.6lSdB5WOwWW.5ySsJt5KPGh" displaytext="Matching" expand="false" type="slide" />
+            <slidelink slideid="_player.6lSdB5WOwWW.6DW9CszE1d6" displaytext="Matching" expand="false" type="slide" />
             <slidelink slideid="_player.6lSdB5WOwWW.69nIHkkwuim" displaytext="Examples" expand="false" type="slide" />
             <slidelink slideid="_player.6lSdB5WOwWW.5jDFvtMaOFt" displaytext="Examples" expand="false" type="slide" />
+            <slidelink slideid="_player.6lSdB5WOwWW.6NWEnRZk34u" displaytext="Summary" expand="false" type="slide" />
             <slidelink slideid="_player.6lSdB5WOwWW.6mLaIypvdEV" displaytext="Matching Exercise Lead-in" expand="false" type="slide" />
             <slidelink slideid="_player.6lSdB5WOwWW.6HrnLws8cpa" displaytext="Quiz Lead-in" expand="false" type="slide" />
             <slidelink slideid="_player.6lSdB5WOwWW.6i0dXzjr1yF" displaytext="Exercises" expand="false" type="slide" />
@@ -1504,7 +1554,12 @@
       </links>
     </outline>
   </nav_data>
-  <resource_data description="" />
+  <resource_data description="&lt;p align='left'&gt;&lt;font face='Lato' style='font-size: 11px;' size='11' color='#BABBBA'&gt;List of common participle adjectives with examples.&lt;/font&gt;&lt;/p&gt;">
+    <resources>
+      <resource url="https://www.perfect-english-grammar.com/support-files/participle_adjectives_short_list.pdf" image="story_content/url.png" title="Common Participle Adjectives (URL)" />
+      <resource url="story_content/external_files/common_participle_adjectives.pdf" image="story_content/6UDtd5J9gKl.png" title="Common Participle Adjectives (PDF)" />
+    </resources>
+  </resource_data>
   <transcript_data />
   <glossary_data />
 </bwFrame>
